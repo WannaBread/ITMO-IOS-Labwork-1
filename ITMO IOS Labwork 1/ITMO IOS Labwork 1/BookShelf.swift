@@ -34,7 +34,7 @@ class BookShelf: BookShelfProtocol {
     }
         
     func add(_ book: Book) throws {
-        validateBook(book)
+        try validateBook(book)
         if books.contains(where: {$0.id == book.id}){
             throw LibraryError.duplicateId(book.id)
         }
@@ -77,7 +77,7 @@ class BookShelf: BookShelfProtocol {
         }
     }
     
-    func validateBook(_ book: Book){
+    func validateBook(_ book: Book) throws{
         if book.title.trimmingCharacters(in: .whitespaces).isEmpty {
             throw LibraryError.emptyTitle
         }
