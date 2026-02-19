@@ -36,5 +36,67 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56D29D7D-C680-4143-8094-8D937B62867C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ITMO IOS Labwork 1/CLI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "addBook()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E68B9788-D362-4451-B329-2758FA9C8BFF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ITMO IOS Labwork 1/BookShelf.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "add(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E68B9788-D362-4451-B329-2758FA9C8BFF - 9428c2126027cb92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ITMO_IOS_Labwork_1.BookShelf.add(ITMO_IOS_Labwork_1.Book) throws -&gt; ()"
+                  moduleName = "ITMO IOS Labwork 1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wannabread/Documents/GitHub/ITMO-IOS-Labwork-1/ITMO%20IOS%20Labwork%201/ITMO%20IOS%20Labwork%201/BookShelf.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+               <Location
+                  uuid = "E68B9788-D362-4451-B329-2758FA9C8BFF - 9428c2126027cb92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ITMO_IOS_Labwork_1.BookShelf.add(ITMO_IOS_Labwork_1.Book) throws -&gt; ()"
+                  moduleName = "ITMO IOS Labwork 1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wannabread/Documents/GitHub/ITMO-IOS-Labwork-1/ITMO%20IOS%20Labwork%201/ITMO%20IOS%20Labwork%201/BookShelf.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
