@@ -34,15 +34,7 @@ class BookShelf: BookShelfProtocol {
     }
         
     func add(_ book: Book) throws {
-        if book.title.trimmingCharacters(in: .whitespaces).isEmpty {
-            throw LibraryError.emptyTitle
-        }
-        if book.author.trimmingCharacters(in: .whitespaces).isEmpty {
-            throw LibraryError.emptyAuthor
-        }
-        if let year = book.publicationYear, year < 1400 && year > Calendar.current.component(.year, from: Date()){
-            throw LibraryError.invalidYear(year)
-        }
+        validateBook(book)
         if books.contains(where: {$0.id == book.id}){
             throw LibraryError.duplicateId(book.id)
         }
@@ -82,6 +74,18 @@ class BookShelf: BookShelfProtocol {
                 return false
             }
             return true
+        }
+    }
+    
+    func validateBook(_ book: Book){
+        if book.title.trimmingCharacters(in: .whitespaces).isEmpty {
+            throw LibraryError.emptyTitle
+        }
+        if book.author.trimmingCharacters(in: .whitespaces).isEmpty {
+            throw LibraryError.emptyAuthor
+        }
+        if let year = book.publicationYear, year < 1400 && year > Calendar.current.component(.year, from: Date()){
+            throw LibraryError.invalidYear(year)
         }
     }
 }

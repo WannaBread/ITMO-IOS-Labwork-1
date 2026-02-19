@@ -9,7 +9,7 @@ enum Genre: String, CaseIterable, Codable {
     case fantasy = "Фэнтези"
 }
 
-struct Book: Identifiable, Equatable, Codable {
+struct Book: Identifiable, Codable {
     let id: String
     var title: String
     var author: String
